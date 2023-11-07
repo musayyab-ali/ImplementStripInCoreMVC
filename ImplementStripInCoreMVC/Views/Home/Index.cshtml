@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+
+<form method="post" action="/Home/CheckOutPaymentWithStripe">
+    <div class="container" style="margin-left:17%;">
+        <div class="row">
+            <div class="col-8">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="enter your amount" id="amount" name="amount" value="" />
+                    <div class="input-group-append">
+                        <button class="btn btn-success">CheckOut</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+
+@*<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-info" type="button" id="button-addon2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
